@@ -1,0 +1,56 @@
+{
+  "sensor_readings": [
+    {
+      "sensor_id": "temp_sensor_1",
+      "type": "temperature",
+      "value": 25.4,
+      "unit": "°C",
+      "timestamp": "2023-11-18T18:30:00Z",
+      "location": "warehouse_a",
+      "status": "normal"
+    },
+    {
+      "sensor_id": "humidity_sensor_1",
+      "type": "humidity",
+      "value": 45.2,
+      "unit": "%",
+      "timestamp": "2023-11-18T18:30:00Z",
+      "location": "warehouse_a",
+      "status": "normal"
+    },
+    {
+      "sensor_id": "vibration_sensor_1",
+      "type": "vibration",
+      "value": 0.12,
+      "unit": "g",
+      "timestamp": "2023-11-18T18:30:00Z",
+      "location": "conveyor_belt_1",
+      "status": "warning"
+    },
+    {
+      "sensor_id": "power_meter_1",
+      "type": "power_consumption",
+      "value": 2450,
+      "unit": "W",
+      "timestamp": "2023-11-18T18:30:00Z",
+      "location": "production_line_1",
+      "status": "normal"
+    },
+    {
+      "sensor_id": "pressure_sensor_1",
+      "type": "pressure",
+      "value": 102.3,
+      "unit": "kPa",
+      "timestamp": "2023-11-18T18:30:00Z",
+      "location": "compressor_room",
+      "status": "alert"
+    }
+  ],
+  "metadata": {
+    "total_readings": 5,
+    "start_time": "2023-11-18T18:30:00Z",
+    "end_time": "2023-11-18T18:30:00Z",
+    "locations": ["warehouse_a", "conveyor_belt_1", "production_line_1", "compressor_room"],
+    "sensor_types": ["temperature", "humidity", "vibration", "power_consumption", "pressure"]
+  }
+}

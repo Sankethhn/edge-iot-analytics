@@ -1,0 +1,26 @@
+{
+  "name": "edge-iot-analytics",
+  "version": "1.0.0",
+  "description": "Edge Computing with Real-Time IoT Analytics",
+  "main": "index.js",
+  "scripts": {
+    "start:simulator": "node edge-device/sensor-simulator.js",
+    "start:mock-sensor": "node cloud/mock-sensor.js",
+    "start:edge": "node edge-device/edge-processor.js",
+    "start:cloud": "node cloud/server.js",
+    "dev": "concurrently \"npm run start:mock-sensor\" \"npm run start:cloud\"",
+    "netlify-build": "node -e \"console.log('Netlify build: static assets already prepared')\""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2",
+    "mqtt": "^5.0.8",
+    "winston": "^3.10.0",
+    "node-machine-id": "^1.1.12"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge IoT Analytics Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .device-card { transition: all 0.3s ease; }
+        .device-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .alert-item { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+        .metric-card { border-left: 4px solid #4F46E5; }
+        .metric-card.temperature { border-left-color: #EF4444; }
+        .metric-card.humidity { border-left-color: #3B82F6; }
+        .metric-card.battery { border-left-color: #10B981; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen">
+        <!-- Header -->
+        <header class="bg-white shadow">
+            <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-gray-900">Edge IoT Analytics Dashboard</h1>
+                <div class="flex items-center space-x-4">
+                    <span id="connection-status" class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                        <span class="w-2 h-2 mr-2 bg-yellow-500 rounded-full"></span>
+                        Connecting...
+                    </span>
+                    <span id="last-updated" class="text-sm text-gray-500">Last updated: --:--:--</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            <!-- Metrics Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                <!-- Temperature Card -->
+                <div class="metric-card temperature bg-white overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-red-100 p-3 rounded-md">
+                                <i class="fas fa-thermometer-half text-red-600 text-2xl"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Avg Temperature</dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900" id="avg-temp">--°C</div>
+                                        <div class="text-xs text-gray-500" id="temp-stats">--°C (σ: --)</div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Humidity Card -->
+                <div class="metric-card humidity bg-white overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-blue-100 p-3 rounded-md">
+                                <i class="fas fa-tint text-blue-600 text-2xl"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Avg Humidity</dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900" id="avg-humidity">--%</div>
+                                        <div class="text-xs text-gray-500" id="humidity-stats">--%</div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Battery Status Card -->
+                <div class="metric-card battery bg-white overflow-hidden shadow rounded-lg">
+                    <div class="px-4 py-5 sm:p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-green-100 p-3 rounded-md">
+                                <i class="fas fa-battery-three-quarters text-green-600 text-2xl"></i>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Battery Status</dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900" id="battery-level">--%</div>
+                                        <div class="text-xs text-gray-500" id="battery-status">--</div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Device List -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white shadow rounded-lg overflow-hidden">
+                        <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Connected Devices</h3>
+                            <p class="mt-1 text-sm text-gray-500">Real-time data from edge devices</p>
+                        </div>
+                        <div class="bg-white overflow-hidden">
+                            <div id="devices-container" class="divide-y divide-gray-200">
+                                <div class="p-4 text-center text-gray-500" id="no-devices">
+                                    <i class="fas fa-plug fa-2x mb-2 text-gray-300"></i>
+                                    <p>No devices connected</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alerts Section -->
+                    <div class="mt-6 bg-white shadow rounded-lg overflow-hidden">
+                        <div class="px-4 py-5 border-b border-gray-200 sm:px-6">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Alerts</h3>
+                                <span id="alert-count" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">0</span>
+                            </div>
+                        </div>
+                        <div class="bg-white overflow-hidden">
+                            <ul id="alerts-list" class="divide-y divide-gray-200 max-h-96 overflow-y-auto">
+                                <li class="p-4 text-center text-gray-500" id="no-alerts">
+                                    <i class="far fa-bell-slash fa-2x mb-2 text-gray-300"></i>
+                                    <p>No alerts</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="space-y-6">
+                    <!-- Temperature Chart -->
+                    <div class="bg-white shadow rounded-lg p-4">
+                        <h4 class="text-md font-medium text-gray-900 mb-4">Temperature Trend</h4>
+                        <div class="h-64">
+                            <canvas id="temperature-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Humidity Chart -->
+                    <div class="bg-white shadow rounded-lg p-4">
+                        <h4 class="text-md font-medium text-gray-900 mb-4">Humidity Trend</h4>
+                        <div class="h-64">
+                            <canvas id="humidity-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Device Detail Modal -->
+    <div id="device-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+        <div class="relative top-20 mx-auto p-5 border w-11/12 md:w-3/4 lg:w-1/2 shadow-lg rounded-md bg-white">
+            <div class="flex justify-between items-center pb-3">
+                <h3 id="modal-title" class="text-xl font-semibold text-gray-900">Device Details</h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-500">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="device-detail-content" class="mt-4">
+                <!-- Device details will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

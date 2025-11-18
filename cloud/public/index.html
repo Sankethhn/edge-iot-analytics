@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Edge Analytics Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgNzkuMWI2NWE3OSwgMjAyMi8wNi8xMy0xNzo0NjoxNCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0RXZ0PSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VFdmVudCMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIzLjMgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDIzLTAxLTE5VDEyOjAwOjA5KzA1OjMwIiB4cDpNb2RpZnlEYXRlPSIyMDIzLTAxLTE5VDEyOjAxOjI1KzA1OjMwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowYzQ5YjQyZS1lYzU4LTQyOTUtYjVlOC0xYjUwYmQ0YjQwYzEiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpiYjE2YzYwYS1hYzNlLWVkNGItYjU4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">
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <header class="mb-8 text-center">
+            <div class="flex items-center justify-center space-x-3 mb-2">
+                <i class="fas fa-microchip text-3xl text-indigo-400"></i>
+                <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-indigo-200">
+                    IoT Edge Analytics
+                </h1>
+            </div>
+            <p class="text-indigo-300 text-lg">Real-time sensor monitoring & analytics platform</p>
+            <div class="mt-4 flex items-center justify-center space-x-4 text-sm text-gray-400">
+                <div class="flex items-center">
+                    <span class="status-indicator status-offline mr-2"></span>
+                    <span id="connectionStatus">Connecting...</span>
+                </div>
+                <span>•</span>
+                <div id="lastUpdate">Last update: --:--:--</div>
+            </div>
+        </header>
+
+        <!-- KPI Row -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+            <div class="glass-card flex items-center justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-wide text-indigo-200">Connected Devices</p>
+                    <p class="value-display text-4xl" id="connectedDevices">--</p>
+                </div>
+                <div class="text-green-300 text-sm" id="uptimeStat">Avg uptime -- hrs</div>
+            </div>
+            <div class="glass-card flex items-center justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-wide text-indigo-200">Avg Temperature</p>
+                    <p class="value-display text-4xl" id="avgTempStat">--°C</p>
+                </div>
+                <span class="text-sm text-gray-300" id="avgTempTrend">Stable</span>
+            </div>
+            <div class="glass-card flex items-center justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-wide text-indigo-200">Avg Humidity</p>
+                    <p class="value-display text-4xl" id="avgHumidityStat">--%</p>
+                </div>
+                <span class="text-sm text-gray-300" id="avgHumidityTrend">Stable</span>
+            </div>
+            <div class="glass-card flex items-center justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-wide text-indigo-200">Active Alerts</p>
+                    <p class="value-display text-4xl" id="activeAlertsStat">0</p>
+                </div>
+                <span class="text-sm text-gray-300" id="alertSeverity">Nominal</span>
+            </div>
+        </section>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Device Fleet -->
+            <div class="glass-card md:col-span-2">
+                <div class="flex items-center justify-between">
+                    <h2 class="section-header">
+                        <i class="fas fa-network-wired"></i> Device Fleet
+                    </h2>
+                    <span class="text-xs text-gray-400" id="fleetTimestamp">Updated --</span>
+                </div>
+                <div id="deviceFleet" class="divide-y divide-white/5 mt-4">
+                    <div class="text-center py-10 text-gray-400" id="fleetEmpty">Waiting for telemetry...</div>
+                </div>
+            </div>
+
+            <!-- Live Device Spotlight -->
+            <div class="glass-card">
+                <h2 class="section-header">
+                    <i class="fas fa-server"></i> Live Stream
+                </h2>
+                <div id="deviceStatus" class="space-y-4">
+                    <div class="text-center py-8">
+                        <div class="loading inline-block"></div>
+                        <span class="text-gray-400">Connecting to device...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Temperature Gauge -->
+            <div class="glass-card">
+                <h2 class="section-header">
+                    <i class="fas fa-thermometer-half"></i> Temperature
+                </h2>
+                <div class="flex flex-col items-center justify-center py-4">
+                    <div class="gauge-container">
+                        <canvas id="tempGauge" width="200" height="200"></canvas>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <div class="value-display">
+                            <span id="currentTemp">--</span>
+                            <span class="unit">°C</span>
+                        </div>
+                        <div class="text-indigo-300 text-sm">
+                            <i class="fas fa-arrow-up text-red-400" id="tempTrend"></i>
+                            <span id="tempChange">--</span> from last reading
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Humidity Gauge -->
+            <div class="glass-card">
+                <h2 class="section-header">
+                    <i class="fas fa-tint"></i> Humidity
+                </h2>
+                <div class="flex flex-col items-center justify-center py-4">
+                    <div class="gauge-container">
+                        <canvas id="humidityGauge" width="200" height="200"></canvas>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <div class="value-display">
+                            <span id="currentHumidity">--</span>
+                            <span class="unit">%</span>
+                        </div>
+                        <div class="text-indigo-300 text-sm">
+                            <i class="fas fa-arrow-up text-blue-400" id="humidityTrend"></i>
+                            <span id="humidityChange">--</span> from last reading
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Charts -->
+            <div class="glass-card md:col-span-2">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="section-header">
+                        <i class="fas fa-chart-line"></i> Sensor Data History
+                    </h2>
+                    <div class="flex space-x-2">
+                        <button id="toggleTemp" class="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 rounded-md text-sm transition-colors">
+                            <i class="fas fa-thermometer-half mr-1"></i> Temp
+                        </button>
+                        <button id="toggleHumidity" class="px-3 py-1 bg-indigo-600 hover:bg-indigo-700 rounded-md text-sm transition-colors">
+                            <i class="fas fa-tint mr-1"></i> Humidity
+                        </button>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="sensorChart" height="300"></canvas>
+                </div>
+            </div>
+
+            <!-- Alerts -->
+            <div class="glass-card">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="section-header">
+                        <i class="fas fa-bell"></i> Alerts
+                    </h2>
+                    <span id="alertCount" class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">0</span>
+                </div>
+                <div id="alertsContainer" class="space-y-3 max-h-96 overflow-y-auto pr-2">
+                    <div class="text-center py-8 text-gray-400">
+                        <i class="fas fa-bell-slash text-2xl mb-2"></i>
+                        <p>No alerts yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Events -->
+            <div class="glass-card md:col-span-2">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="section-header">
+                        <i class="fas fa-stream"></i> Recent Telemetry
+                    </h2>
+                    <span class="text-xs text-gray-400" id="eventsCount">0 events</span>
+                </div>
+                <div id="eventTimeline" class="space-y-4 max-h-96 overflow-y-auto pr-2">
+                    <div class="text-center py-8 text-gray-400">
+                        <i class="fas fa-wave-square text-2xl mb-2"></i>
+                        <p>Waiting for incoming data...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-gray-500 text-sm">
+            <p>IoT Edge Analytics Dashboard • v1.0.0 • <span id="currentYear"></span></p>
+            <p class="mt-1 text-xs text-gray-600">Connected to: <span id="serverUrl">ws://localhost:3000</span></p>
+        </footer>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.7.2/dist/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-gauge@0.3.0/dist/chartjs-gauge.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

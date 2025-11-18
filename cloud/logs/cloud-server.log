@@ -1,0 +1,17 @@
+{"level":"info","message":"Cloud server running on http://localhost:3000","timestamp":"2025-11-17T15:02:32.878Z"}
+{"level":"info","message":"New client connected","timestamp":"2025-11-17T15:02:40.685Z"}
+{"level":"info","message":"Client disconnected","timestamp":"2025-11-17T15:02:51.678Z"}
+{"level":"info","message":"Cloud server running on http://localhost:3000","timestamp":"2025-11-17T15:08:42.033Z"}
+{"level":"info","message":"New client connected","timestamp":"2025-11-17T15:08:45.579Z"}
+{"level":"info","message":"Client disconnected","timestamp":"2025-11-17T15:08:53.959Z"}
+{"level":"info","message":"Cloud server running on http://0.0.0.0:3000","timestamp":"2025-11-18T12:55:43.069Z"}
+{"level":"info","message":"Cloud server running on http://0.0.0.0:3001","timestamp":"2025-11-18T12:59:08.704Z"}
+{"level":"info","message":"New client connected","timestamp":"2025-11-18T12:59:15.627Z"}
+{"level":"info","message":"Client disconnected","timestamp":"2025-11-18T13:04:51.122Z"}
+{"level":"info","message":"Cloud server running on http://0.0.0.0:3000","timestamp":"2025-11-18T13:18:30.721Z"}
+{"level":"info","message":"New client connected","timestamp":"2025-11-18T13:19:10.079Z"}
+{"level":"info","message":"Server running at http://0.0.0.0:3000","timestamp":"2025-11-18T14:15:12.115Z"}
+{"level":"info","message":"Environment: development","timestamp":"2025-11-18T14:15:12.117Z"}
+{"level":"info","message":"New client connected","timestamp":"2025-11-18T14:15:12.774Z"}
+{"level":"info","message":"GET /favicon.ico","timestamp":"2025-11-18T14:15:30.829Z"}
+{"level":"info","message":"Client disconnected","timestamp":"2025-11-18T14:30:29.337Z"}

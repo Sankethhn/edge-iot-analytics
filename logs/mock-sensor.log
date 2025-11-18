@@ -1,0 +1,150 @@
+{"level":"info","message":"Mock sensor service started","timestamp":"2025-11-18T00:50:08.438Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:08.452Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:09.466Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:10.494Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:11.513Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:12.520Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:13.531Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:14.543Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:15.553Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:16.656Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:17.670Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:18.683Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:19.702Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:20.712Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:21.721Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:22.730Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:23.741Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:24.757Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:25.771Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:26.788Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:27.803Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:28.816Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:29.819Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:30.828Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:31.843Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:32.858Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:33.871Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:34.887Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:35.903Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:36.916Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:37.930Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:38.945Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:39.950Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:40.965Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:41.983Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:42.999Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:44.030Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:45.038Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:46.053Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:47.067Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:48.080Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:49.096Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:50.104Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:51.115Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:52.129Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:53.143Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:54.154Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:55.164Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:56.181Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:57.198Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:58.209Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:50:59.225Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:00.242Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:01.255Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:02.257Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:03.270Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:04.280Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:05.294Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:06.308Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:07.324Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:08.325Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:09.330Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:10.342Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:11.345Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:12.361Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:13.411Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:14.479Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:15.495Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:16.531Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:17.540Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:18.549Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:19.563Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:20.582Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:21.594Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:22.604Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:23.621Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:24.635Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:25.650Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:26.654Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:27.670Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:28.681Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:29.692Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:30.705Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:31.716Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:32.733Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:33.748Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:34.761Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:35.773Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:36.785Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:37.803Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:38.813Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:39.830Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:40.843Z"}
+{"level":"error","message":"MQTT error: ","timestamp":"2025-11-18T00:51:41.852Z"}
+{"level":"info","message":"Stopping mock sensor...","timestamp":"2025-11-18T00:51:42.619Z"}
+{"level":"info","message":"Mock sensor service started","timestamp":"2025-11-18T00:55:22.127Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:22.144Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:22.845Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:25.424Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:30.471Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:35.502Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:40.518Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:45.563Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:50.603Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:55:55.656Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T00:56:00.691Z"}
+{"level":"info","message":"Stopping mock sensor...","timestamp":"2025-11-18T00:56:01.552Z"}
+{"level":"info","message":"Mock sensor service started","timestamp":"2025-11-18T13:54:33.119Z"}
+{"level":"info","message":"Connected to WebSocket server","timestamp":"2025-11-18T13:54:33.163Z"}
+{"level":"info","message":"Starting mock data emission every 5 seconds","timestamp":"2025-11-18T13:54:33.163Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T13:54:33.164Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.23403131332253319,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T13:54:33.164Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T13:54:58.290Z\",\"type\":\"high_humidity\",\"message\":\"High humidity detected\",\"value\":69.93,\"threshold\":80,\"severity\":\"warning\"}","timestamp":"2025-11-18T13:54:58.292Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T13:55:58.394Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.2594219757527523,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T13:55:58.395Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T13:56:38.456Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.29765866976894106,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T13:56:38.457Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T13:58:23.610Z\",\"type\":\"high_humidity\",\"message\":\"High humidity detected\",\"value\":73.42,\"threshold\":80,\"severity\":\"warning\"}","timestamp":"2025-11-18T13:58:23.611Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T13:58:48.646Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":72.25,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T13:58:48.646Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T13:59:43.730Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.3052651717752639,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T13:59:43.731Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:00:28.808Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.16695916195724805,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:00:28.809Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:01:23.914Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.26628828541975524,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:01:23.915Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:01:53.973Z\",\"type\":\"low_temp\",\"message\":\"Low temperature detected\",\"value\":0.22140805375264427,\"threshold\":20,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:01:53.974Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:02:08.977Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":74.82,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:02:08.978Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:02:13.989Z\",\"type\":\"high_temp\",\"message\":\"High temperature detected\",\"value\":0.15313240175185863,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:02:13.989Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:03:29.101Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":75.31,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:03:29.101Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:04:29.152Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.2883078780742423,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:04:29.153Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:04:34.162Z\",\"type\":\"high_temp\",\"message\":\"High temperature detected\",\"value\":0.2904863070373255,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:04:34.162Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:05:29.264Z\",\"type\":\"low_temp\",\"message\":\"Low temperature detected\",\"value\":0.22530275206428105,\"threshold\":20,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:05:29.264Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:06:14.343Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":76.6,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:06:14.344Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:06:44.390Z\",\"type\":\"high_temp\",\"message\":\"High temperature detected\",\"value\":0.12349563269989147,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:06:44.391Z"}
+{"level":"info","message":"Mock sensor service started","timestamp":"2025-11-18T14:15:11.942Z"}
+{"level":"error","message":"WebSocket connection error: xhr poll error","timestamp":"2025-11-18T14:15:11.964Z"}
+{"level":"info","message":"Connected to WebSocket server","timestamp":"2025-11-18T14:15:12.782Z"}
+{"level":"info","message":"Starting mock data emission every 5 seconds","timestamp":"2025-11-18T14:15:12.782Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:15:22.798Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.1133389570231485,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:15:22.800Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:18:08.101Z\",\"type\":\"high_temp\",\"message\":\"High temperature detected\",\"value\":0.19758747503827423,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:18:08.102Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:18:28.145Z\",\"type\":\"low_temp\",\"message\":\"Low temperature detected\",\"value\":0.16588835712919037,\"threshold\":20,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:18:28.145Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:18:33.155Z\",\"type\":\"high_temp\",\"message\":\"High temperature detected\",\"value\":0.2609653163392246,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:18:33.155Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:19:08.189Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":73.82,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:19:08.189Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:19:58.261Z\",\"type\":\"high_temp\",\"message\":\"High temperature detected\",\"value\":0.22929071327138745,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:19:58.261Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:20:28.319Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":75.25,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:20:28.320Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:21:03.369Z\",\"type\":\"high_humidity\",\"message\":\"High humidity detected\",\"value\":73.97,\"threshold\":80,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:21:03.369Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:22:28.504Z\",\"type\":\"vibration\",\"message\":\"High vibration detected\",\"value\":0.20557295726995173,\"threshold\":0.4,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:22:28.504Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:23:53.658Z\",\"type\":\"high_temp\",\"message\":\"High temperature detected\",\"value\":0.14229264039932568,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:23:53.659Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:24:38.719Z\",\"type\":\"low_temp\",\"message\":\"Low temperature detected\",\"value\":0.1635938099578209,\"threshold\":20,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:24:38.720Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:26:08.868Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":74.26,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:26:08.868Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:26:23.907Z\",\"type\":\"high_humidity\",\"message\":\"High humidity detected\",\"value\":74.8,\"threshold\":80,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:26:23.908Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:26:33.919Z\",\"type\":\"high_humidity\",\"message\":\"High humidity detected\",\"value\":74.51,\"threshold\":80,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:26:33.919Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:27:34.008Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":74.12,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:27:34.009Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:28:04.048Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":75.12,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:28:04.049Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:28:44.140Z\",\"type\":\"low_temp\",\"message\":\"Low temperature detected\",\"value\":0.10837845079411129,\"threshold\":20,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:28:44.141Z"}
+{"level":"warn","message":"Emitted alert: {\"deviceId\":\"mock-device-001\",\"timestamp\":\"2025-11-18T14:30:29.322Z\",\"type\":\"low_humidity\",\"message\":\"Low humidity detected\",\"value\":72.73,\"threshold\":30,\"severity\":\"warning\"}","timestamp":"2025-11-18T14:30:29.323Z"}

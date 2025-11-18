@@ -1,0 +1,14 @@
+[build]
+  command = "npm run netlify-build"
+  publish = "cloud/public"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/telemetry"
+  to = "/.netlify/functions/telemetry"
+  status = 200
+  force = true
+
