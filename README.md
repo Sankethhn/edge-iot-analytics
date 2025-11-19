@@ -129,7 +129,7 @@ edge-iot-analytics/
 │   └── sample_sensor_data.json # Sample data for testing
 │
 ├── logs/                 # Application logs
-└── node_modules/         # Node.js dependencies
+└──
 ```
 
 ## 🎮 Usage Guide
